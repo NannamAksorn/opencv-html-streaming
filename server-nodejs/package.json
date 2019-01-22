@@ -1,0 +1,16 @@
+{
+  "name": "streaming",
+  "version": "1.0.0",
+  "description": "Streaming python opencv to html",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nannam Aksorn",
+  "license": "MIT",
+  "dependencies": {
+    "http": "0.0.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {}
+}
