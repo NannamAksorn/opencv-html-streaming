@@ -9,6 +9,7 @@ PORT = 6379
 DEVICE = 0
 WIDTH = 1280
 HEIGHT = 720
+QUALITY = 70
 
 s = streamer(host=HOST, port=PORT)
 
@@ -24,7 +25,7 @@ while True:
         break 
 # TODO function(frame) 
     cv2.imshow("client Webcam", frame)
-    s.broadcast(frame, quality=70)
+    s.broadcast(frame, quality=QUALITY)
     key = cv2.waitKey(1)
     if key == ord("q"):
         break
